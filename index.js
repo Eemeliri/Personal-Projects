@@ -6,13 +6,14 @@ http.createServer(function (request, response) {
     // HUOM! grid.htm t‰ytyy olla samassa hakemistossa kuin t‰m‰ index.js
     
     fs.readFile("grid.htm", function (err, data) {
-        response.writeHead(200, { 'Content-type': 'text/html' });
+        response.writeHead(300, { 'Content-type': 'text/html' });
         response.write(data);
         response.end();
     });
 
     // Alla helpoin mahdollinen esimerkki
-    //response.write("Hello world");
+    //response.write("Hello
+");
 
     // Alla "t‰ydellist‰ html:‰‰"
 	
